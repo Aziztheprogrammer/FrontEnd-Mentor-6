@@ -1,0 +1,128 @@
+aside {
+   font-size: 11px; 
+   text-align: center; 
+   position: absolute;
+   bottom: 5%;
+   left: 0%;
+   padding: 2px;
+   background-color: white;  
+   color: black;
+}
+
+aside div.attribution a {
+   color: hsl(228, 45%, 44%); 
+}
+
+html {
+	font-size: 18px;
+}
+
+/*Starting The Project*/
+body {
+    overflow: hidden;
+	font-family: sans-serif;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: hsl(185, 75%, 39%);
+	position: relative;
+	font-family: "Kumbh Sans", sans-serif;
+}
+
+body > picture {
+	position: absolute;
+	z-index: -1;
+}
+
+body > picture:nth-child(1) {
+	top: -50%;
+	left: -20%;
+}
+
+body > picture:nth-child(2) {
+	bottom: -50%;
+	right: -20%;
+}
+
+main {
+	width: 30%;
+	min-width: 350px;
+	height: fit-content;
+	text-align: center;
+	display: grid;
+	grid-template: repeat(3, auto) / 100%;
+	border-radius: 15px;
+	background-color: hsl(0, 0%, 100%);
+}
+
+main > picture img {
+	width: 100%;
+	border-radius: 15px 15px 0px 0px;
+}
+
+main div.name-div {
+	position: relative;
+	padding: 20% 20% 5% 20%;
+}
+
+main div.name-div picture {
+	position: absolute;
+	top: -48px;
+	left: 50%;
+	transform: translateX(-50%);
+}
+
+main div.name-div picture img {
+	transition: ease 0.5s all;
+}
+
+main div.name-div picture img:hover {
+	transform: rotate(10deg);
+}
+
+main div.name-div picture img {
+	border-radius: 50%;
+	border: 7px solid #fff;
+}
+
+main div.name-div span.country {
+	display: block;
+	color: hsl(227, 10%, 46%);
+	font-size: 0.9rem;
+}
+
+main div.name-div span.age {
+	color: hsl(227, 10%, 46%);
+	font-size: 1.1rem;
+}
+
+main div.name-div span.name {
+	font-weight: 700;
+	margin: 5px;
+	font-size: 1.1rem;
+	color: hsl(229, 23%, 23%);
+}
+
+main hr {
+	width: 99%;
+}
+
+main div.stats-div {
+	padding: 5% 12%;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+main div.stats-div span span:nth-child(1) {
+	color: hsl(229, 23%, 23%);
+	font-weight: 700;
+	font-size: 1.1rem;
+	display: block;
+}
+
+main div.stats-div span span:nth-child(2) {
+	font-size: 0.7rem;
+	color: hsl(227, 10%, 46%);
+	letter-spacing: 1.5px;
+}
